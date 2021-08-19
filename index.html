@@ -600,6 +600,7 @@
         <script src="js/mask.js"></script>
         <script>
             //ПЛАВНЫЙ ЯКОРЬ 
+            $('[type=tel]').mask('+7 (999) 999-99-99')
             const anchors = document.querySelectorAll('a[href*="#"]')
 
             for(let anchor of anchors) {
@@ -612,7 +613,7 @@
                     })
                 })
             }
-            $('[type=tel]').mask('+7 (999) 999-99-99')
+        
             let openQuestions = document.querySelectorAll('.questions__item');
 
             for(let i = 0; i < openQuestions.length; i++) {
