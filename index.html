@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <header class="header wrap">
+            <picture class="header__logo">
+                <source media="(min-width: 768px)" srcset="image/header/logo-desctop.svg" width='188' height='70'>
+                <img src="image/header/header-mobile.svg" width="118" height="44"> 
+            </picture>
+            <ul class="header__list-desctop ">
+                <li class="header__item-desctop">
+                    <a class="header__item__link header__item__link-telegram" href="#"></a>
+                </li>
+                <li class="header__item-desctop">
+                    <a class="header__item__link header__item__link-vk" href="#"></a>
+                </li>
+                <li class="header__item-desctop">
+                    <a class="header__item__link header__item__link-wathap" href="#"></a>
+                </li>
+                <li class="header__item-desctop">
+                    <a class="header__item__link header__item__link-viber" href="#"></a>
+                </li>
+            </ul>
+            <div class="header__contact">
+                <a class="header__contact__tel" href="#">+7 (927) 018-26-56</a>
+                <button class="header__contact__button" type="button">заказать звонок</button>
+            </div>
+        </header> 
+
+        <main>
+            <section class="preview">
+                <div class="preview__wrap wrap">
+                    <ul class="preview__list-social">
+                        <li class="preview__item-social"><a class="preview__item-social-link preview__item-social-link-telegram" href="#"></a></li>
+                        <li class="preview__item-social"><a class="preview__item-social-link preview__item-social-link-vk" href="#"></a></li>
+                        <li class="preview__item-social"><a class="preview__item-social-link preview__item-social-link-wathap" href="#"></a></li>
+                        <li class="preview__item-social"><a class="preview__item-social-link preview__item-social-link-viber" href="#"></a></li>
+                    </ul>  
+                    <h1 class="preview__header">Работа <br> web-моделью <br> в  Самаре </h1>         
+                    <button class="preview__button button-active" type="button"> <a href="#anketa">Заполнить анкету</a> </button>
+                    <ul class="preview__list">
+                        <li class="preview__item">
+                            <h2 class="preview__item__header">Стабильный заработок</h2>
+                            <p class="preview__item__text">Своевременные, еженедельные <br> выплаты наличными</p>
+                        </li>
+                        <li class="preview__item">
+                            <h2 class="preview__item__header">Высокий доход</h2>
+                            <p class="preview__item__text">40 000 - 70 000 ₽/ месяц <br> с первого месяца работы</p>
+                        </li>
+                        <li class="preview__item">
+                            <h2 class="preview__item__header">Гибкий график</h2>
+                            <p class="preview__item__text">Возможность выбрать<br> удобный график работы</p>
+                        </li>
+                    </ul>         
+                </div>
+            </section>
+            <section class="quiz-wrap">
+                <h2 class="quiz-wrap__header wrap">Рассчитай свой примерный доход <br> <span>всего за пару минут</span></h2>
+                <div class="quiz-test">
+                    <div class="quiz-box" id="quiz-box">
+                        <p class="quiz-prev quiz-prev-2">Назад</p>
+                        <p class="quiz-prev quiz-pre-3">Назад</p>
+
+                        <div class="quiz-box__progress-bar" id="id1"><span class="quiz-box__progress-bar__current"></span></div>
+                        <div class="quiz-box__cyrent" id="">Вопрос <span class="quiz-box__cyrent__number">1</span> / 3</div>
+                        <form class="quiz-box__form" method="POST">
+                            <div class="quiz-box__form__block quiz-box__form__block-active quizblock-1">
+                                <h2 class="quiz-box__form__block__header">Сколько дней в неделю ты готова работать?</h2>
+                                <div class="quiz-box__form__block__wrap">
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-1 visually-hidden" type="radio" name="quiz-1" id="four">
+                                        <label for="four">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-1-four.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">4 дня</p>
+                                            </div>
+                                        </label>                       
+                                    </div>   
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-1 visually-hidden" type="radio" name="quiz-1" id="five">
+                                        <label for="five">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-1-faif.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">5 дней</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-1 visually-hidden" type="radio" name="quiz-1" id="six">
+                                        <label for="six">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-1-six.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">6 дней</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-1 visually-hidden" type="radio" name="quiz-1" id="seven">
+                                        <label for="seven">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-1-seven.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">7 дней</p>
+                                            </div>
+                                        </label>                       
+                                    </div>         
+                                </div>
+                            </div>
+                            <div class="quiz-box__form__block quizblock-2">
+                                <h2 class="quiz-box__form__block__header">Желаемое количество часов в день ?</h2>
+                                <div class="quiz-box__form__block__wrap">
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-2 visually-hidden" type="radio" name="quiz-2" id="four-hours">
+                                        <label for="four-hours">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-2-1.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">4 часа</p>
+                                            </div>
+                                        </label>                       
+                                    </div>   
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-2 visually-hidden" type="radio" name="quiz-2" id="five-hours">
+                                        <label for="five-hours">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-2-2.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">5 часов</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-2 visually-hidden" type="radio" name="quiz-2" id="six-hours">
+                                        <label for="six-hours">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-2-3.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">6 часов</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-2 visually-hidden" type="radio" name="quiz-2" id="seven-hours">
+                                        <label for="seven-hours">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-2-4.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">7 часов</p>
+                                            </div>
+                                        </label>                       
+                                    </div>         
+                                </div>
+                            </div>
+                            <div class="quiz-box__form__block quizblock-3">
+                                <h2 class="quiz-box__form__block__header">Опыт работы веб-моделью</h2>
+                                <div class="quiz-box__form__block__wrap">
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-3 visually-hidden" type="radio" name="quiz-3" id="without-experience">
+                                        <label for="without-experience">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-3-1.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">Без опыта</p>
+                                            </div>
+                                        </label>                       
+                                    </div>   
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-3 visually-hidden" type="radio" name="quiz-3" id="half-year">
+                                        <label for="half-year">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-3-2.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">0-6 месяцев</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-3 visually-hidden" type="radio" name="quiz-3" id="year">
+                                        <label for="year">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-3-3.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">6-12 месяцев</p>
+                                            </div>
+                                        </label>                       
+                                    </div> 
+                                    <div class="quiz-box__form__block__wrap__question">
+                                        <input class="quiz-box__form__block__wrap__question__radio quiz-3 visually-hidden" type="radio" name="quiz-3" id="more-year">
+                                        <label for="more-year">
+                                            <div>
+                                                <img class="quiz-box__form__block__wrap__question__img" src="image/quiz/quiz-3-4.png" width="134" height="155">    
+                                            </div>
+                                            <div class="quiz-box__form__block__wrap__question__check">
+                                                <span class="quiz-box__form__block__wrap__question__check-redio"></span>
+                                                <p class="quiz-box__form__block__wrap__question__check-name">12 месяцев</p>
+                                            </div>
+                                        </label>                       
+                                    </div>         
+                                </div>
+                            </div>
+                            <div class="quiz-box__form__block quizblock-4">
+                                <h2 class="quiz-box__form__block__header quizblock-4__header">Спасибо за ответы!</h2>
+                                <p class="quiz-box__form__block__subtitle">Получи результаты, оставив свой номер телефона</p>
+                                <div class="quiz-box__form__block__box">
+                                    <input class="quiz-box__form__block__input" type="tel"  name="tel" placeholder="+7 (999) 999-99-99" id="" required>
+                                    <div class="questionnaire__consultation-form questionnaire__consultation-form-quiz">
+                                        <input class="questionnaire__consultation-form__iput visually-hidden" id="checkboxs" type="checkbox" name="approvalS" required checked>
+                                        <label for="checkboxs" class="questionnaire__consultation-label">Даю согласие на обработку <a href="#">персональных данных</a></p>
+                                    </div>
+                                    <button class="quiz-box__form__block__submit button-active" type="submit">Рассчитать примерный доход</button>   
+                                </div>
+                            </div>
+                            <div class="quiz-box__form__block quizblock-5">
+                                <img class="quizblock-5__img" src="image/quiz/Check.png" width="114" height="114">
+                                <h2 class="quiz-box__form__block__header quizblock-5__img__header">Мы уже получили твои  ответы и скоро свяжемся с тобой</h2>
+                                <button class="quizblock-5__img__button button-active" type="button">Закрыть</button>
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+
+            </section>
+            <section class="opportunities">
+                <h2 class="opportunities__header wrap">Посмотри,<span>что могут позволить себе наши модели</span></h2>
+                <div class="opportunities-slide-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--opportunities-slide">
+                            <div class="wrap-opportunities-slide opportunities-slide">
+                                <div class="opportunities-slide__wrap">
+                                    <img class="opportunities__slide-image" src="image/opportunities/opportunities-image.jpg" width="259" height="222">
+                                    <h2 class="opportunities__slide-header">Автомобиль <br> 1 500 000 ₽</h2>
+                                    <p class="opportunities__slide-text">≈ 4 месяца</p>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--opportunities-slide">
+                            <div class="wrap-opportunities-slide opportunities-slide">
+                                <div class="opportunities-slide__wrap">
+                                    <img class="opportunities__slide-image" src="image/opportunities/opportunities-image-2.jpg" width="259" height="222">
+                                    <h2 class="opportunities__slide-header">1-комнатная квартира <br> 2 900 000 ₽</h2>
+                                    <p class="opportunities__slide-text">≈ 24 месяца</p>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--opportunities-slide">
+                            <div class="wrap-opportunities-slide opportunities-slide">
+                                <div class="opportunities-slide__wrap">
+                                    <img class="opportunities__slide-image" src="image/opportunities/opportunities-image-3.jpg" width="259" height="222">
+                                    <h2 class="opportunities__slide-header">Отдых на Бали <br>250 000 ₽</h2>
+                                    <p class="opportunities__slide-text">≈ 4 месяца</p>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <button class="opportunities__button button-active" type="button">Хочу также!</button>
+                </div>
+            </section>
+            <section class="about-work">
+                <div class="about-work__wrap wrap">
+                    <h2 class="about-work__header">Расскажем несколько слов о работе <span>и кто такая <br> web-модель</span></h2>
+                    <ul class="about-work__list">
+                        <li class="about-work__item">
+                            <img class="about-work__item__image-desctop" src="image/about-work/gerl-desctop.png">
+                            <div class="about-work__item__content">
+                                <h2 class="about-work__item__content__header">– Что надо делать?</h2>
+                                <img class="about-work__item__content__image-mobile" src="image/about-work/gerl-desctop.png">
+                                <p class="about-work__item__content__text-1">Тебе надо будет общаться с иностранными пользователями в видеочате. За это зрители платят деньги. Фактически здесь нет никаких ограничений по поводу того, как и о чем должна вестись беседа.</p>
+                                <p class="about-work__item__content__text-2">Общение ведется на различные темы, шоу веб модели может включать как разговоры по душам с поклонниками, так и танцы, игры, более откровенные шоу в зависимости от личных границ модели и ее/его целевой аудитории.</p>
+                            </div>
+                        </li>
+                        <li class="about-work__item">
+                            <img class="about-work__item__image-desctop" src="image/about-work/web-desctop.png">
+                            <div class="about-work__item__content">
+                                <h2 class="about-work__item__content__header">– Работа веб моделью</h2>
+                                <img class="about-work__item__content__image-mobile" src="image/about-work/web-desctop.png">
+                                <p class="about-work__item__content__text-1">Итак, ты открываешь видеочат. На тебя смотрят самые разные люди со всех концов света. Все они, по большому счету, хотят одного — внимания. Мемебру нужно, чтобы его услышали и отвлекли от прозы жизни. И он готов платить за это хорошие деньги. Твоя задача: удержать и увлечь мембера в приватную беседу. Чем больше времени ты ему уделишь, тем больше заработаешь. Начитанность, эрудиция, знание английского и раскрепощённость — только в плюс. Не волнуйся, никаких «выездов на вызовы» работа вебкам моделью в Самаре не предусматривает.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="about-work__subtitle">
+                        Если ты серьезно настроена работать и зарабатывать хорошие деньги, общаясь по “вебке” – заполняй анкету и приходи на собеседование. Мы будем рады видеть в нашей вебкам студии как опытных веб моделей, так и целеустремленных новичков, мы дорожим каждым сотрудником.
+                    </div>
+                </div>
+            </section>
+            <section class="conditions">
+                <h2 class="conditions__header"> <span>Какие условия мы предлагаем своим</span>  сотрудникам?</h2>
+                <div class="conditions-slide-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--conditions-slide">
+                            <div class="wrap-conditions-slide conditions-slide">
+                                <div class="wrap-conditions-slide__block">
+                                    <img class="wrap-conditions-slide__block__img" src="image/conditions/conditions-image.jpg" alt="">
+                                    <h2 class="wrap-conditions-slide__block__header">Анонимность</h2>
+                                    <p class="wrap-conditions-slide__block__text">Полная конфиденциальность. Работа с США, ЕС, Австралией</p>   
+                                </div>
+                                <div class="wrap-conditions-slide__ico">
+                                    <img src="image/conditions/elips.svg" width="34" height="34">   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--conditions-slide">
+                            <div class="wrap-conditions-slide conditions-slide">
+                                <div class="wrap-conditions-slide__block">
+                                    <img class="wrap-conditions-slide__block__img" src="image/conditions/conditions-image-2.jpg" alt="">
+                                    <h2 class="wrap-conditions-slide__block__header">Гибкий график</h2>
+                                    <p class="wrap-conditions-slide__block__text">Работа в любое время. Дневные, вечерние и ночные смены</p>   
+                                </div>
+                                <div class="wrap-conditions-slide__ico">
+                                    <img src="image/conditions/elips-2.svg" width="34" height="34">   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--conditions-slide">
+                            <div class="wrap-conditions-slide conditions-slide">
+                                <div class="wrap-conditions-slide__block">
+                                    <img class="wrap-conditions-slide__block__img" src="image/conditions/conditions-image-3.jpg" alt="">
+                                    <h2 class="wrap-conditions-slide__block__header">Комфорт</h2>
+                                    <p class="wrap-conditions-slide__block__text">Изолированные рабочие места, комнаты со всеми удобствами</p>   
+                                </div>
+                                <div class="wrap-conditions-slide__ico">
+                                    <img src="image/conditions/elips-3.svg" width="34" height="34">   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--conditions-slide">
+                            <div class="wrap-conditions-slide conditions-slide">
+                                <div class="wrap-conditions-slide__block">
+                                    <img class="wrap-conditions-slide__block__img" src="image/conditions/conditions-image-4.jpg" alt="">
+                                    <h2 class="wrap-conditions-slide__block__header">Прозрачный расчёт</h2>
+                                    <p class="wrap-conditions-slide__block__text">Своевременные, еженедельные выплаты наличными</p>   
+                                </div>
+                                <div class="wrap-conditions-slide__ico">
+                                    <img src="image/conditions/elips-4.svg" width="34" height="34">   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions__income wrap">
+                    <div class="conditions__income__box">
+                        <p>40 000 ₽ - 70 000 ₽/ месяц </p>
+                        <span>*Данные взяты из реальной статистики наших моделей с опытом до полугода</span>                       
+                    </div>
+                    <button class="conditions__income__button button-active" type="button"> <a href="#anketa">Заполнить анкету</a> </button>
+                </div>
+            </section>
+            <section class="requirements">
+                <div class="requirements__sacura"></div>
+                <div class="requirements__sacura-mobile"></div>
+                <div class="requirements__wrap wrap">
+                    <h2 class="requirements__header">Для работы с нами ты должна <span>соответствовать простым требованиям</span></h2>
+                    <ul class="requirements__list">
+                        <li class="requirements__item">
+                            <p class="requirements__item__numer">01</p>
+                            <h2 class="requirements__item__header">Совершеннолетие</h2>
+                            <p class="requirements__item__text">Вебкам-моделью может стать <br> девушка только старше 18 лет</p>
+                            <span class="requirements__item__check">
+                                <img src="image/requirements/absolute.svg" width="24" height="24" alt="">
+                            </span>
+                        </li>
+                        <li class="requirements__item">
+                            <p class="requirements__item__numer">02</p>
+                            <h2 class="requirements__item__header">Желание учиться</h2>
+                            <p class="requirements__item__text">Ты хочешь развиваться, узнавать новое и нацелена на высокий доход </p>
+                            <span class="requirements__item__check">
+                                <img src="image/requirements/absolute.svg" width="24" height="24" alt="">
+                            </span>
+                        </li>
+                        <li class="requirements__item">
+                            <p class="requirements__item__numer">03</p>
+                            <h2 class="requirements__item__header">Коммуникабельность</h2>
+                            <p class="requirements__item__text">Работа веб-моделью основана на умении заинтересовать собеседников</p>
+                            <span class="requirements__item__check">
+                                <img src="image/requirements/absolute.svg" width="24" height="24" alt="">
+                            </span>
+                        </li>
+                    </ul>
+                    <picture class="requirements__strech">
+                        <source media="(min-width: 768px)" srcset="image/requirements/strech-desctop.png" width='41' height='143'>
+                        <img src="image/requirements/strech-mobile.png" width="26" height="89"> 
+                    </picture>
+                    <h2 class="requirements__header-description">Подходишь под описание?</h2>
+                    <span class="requirements__subtitle">Тогда ты нам нужна:)</span>
+                    <p class="requirements__text">Заполняй анкету и начни зарабатывать <span>от 40 000  ₽/ месяц</span>  уже сразу после обучения</p>
+                    <button class="requirements__button button-active" type="button"><a href="#anketa">Заполнить анкету</a></button>
+                </div>
+            </section>
+            <section class="independence">
+                <div class="independence__wrap wrap">
+                    <h2 class="independence__header">4 шага чтобы стать <span>счастливой и независимой</span> </h2>
+                    <div class="independence__box">
+                        <ul class="independence__box__lsit">
+                            <li class="independence__box__item">
+                                <h2 class="independence__box__item__header">Оставь заявку на сайте</h2>
+                                <p class="independence__box__item__text">Оставь заявку на сайте и с тобой свяжется наш менеджер, оставление заявки ни к чему тебя не обязывает</p>
+                            </li>
+                            <li class="independence__box__item">
+                                <h2 class="independence__box__item__header">Пройди собеседование</h2>
+                                <p class="independence__box__item__text">Несколько простых вопросов, собсеседование можно пройти в офисе или онлайн</p>
+                            </li>
+                            <li class="independence__box__item">
+                                <h2 class="independence__box__item__header">Тестовая смена</h2>
+                                <p class="independence__box__item__text">Проведём инструктаж, а ты наглядно проверишь,  подходит это тебе или нет</p>
+                            </li>
+                            <li class="independence__box__item">
+                                <h2 class="independence__box__item__header">Приступай к работе</h2>
+                                <p class="independence__box__item__text">Получишь доступ к личным апартаментам и начинай зарабатывать</p>
+                            </li>
+                        </ul>
+                          <img class="independence__strech" src="image/independence/gerl-desctop.png"> 
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <h2 class="reviews__header wrap">Ещё сомневаешься? почитай <span>отзывы других моделей</span> </h2>
+                <div class="reviews__wrap">
+                    <div class="reviews-slide-container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--reviews-slide">
+                                <img class="swiper-slide__reviews" src="image/reviews/reviews-1.jpg" alt="отзыв" width="162" height="335">
+                            </div>
+                            <div class="swiper-slide swiper-slide--reviews-slide">
+                                <img class="swiper-slide__reviews" src="image/reviews/reviews-2.jpg" alt="отзыв" width="162" height="335">
+                            </div>
+                            <div class="swiper-slide swiper-slide--reviews-slide">
+                                <img class="swiper-slide__reviews" src="image/reviews/reviews-3.jpg" alt="отзыв" width="162" height="335">
+                            </div>
+                            <div class="swiper-slide swiper-slide--reviews-slide">
+                                <img class="swiper-slide__reviews" src="image/reviews/reviews-4.jpg" alt="отзыв" width="162" height="335">
+                            </div>
+                            <div class="swiper-slide swiper-slide--reviews-slide">
+                                <img class="swiper-slide__reviews" src="image/reviews/reviews-5.jpg" alt="отзыв" width="162" height="335">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__next">
+
+                    </div>
+                    <div class="reviews__prev">
+
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="questions__wrap wrap">
+                    <h2 class="questions__header">Мы собрали частые <span>вопросы и ответы на них</span> </h2>
+                    <ul class="questions__list">
+                        <li class="questions__item questions__item_open">
+                            <h2 class="questions__item__header">Что такое вебкам-модель?</h2>
+                            <p class="questions__item__text">Работа заключается в привлечении внимания пользователей сайта эротическим контентом. Позировать, выполнять задания клиента или заставлять мембера выполнять квесты? Сценарий зависит от решимости модели и желания заработать. Даже раздеваться не обязательно. Порталы устанавливают ограничения, но все они призваны сохранить жизнь и здоровье пользователей.</p>
+                            <div class="questions__item__open"></div>
+                        </li>
+                        <li class="questions__item">
+                            <h2 class="questions__item__header">Выдвигаемые к соискателям требования</h2>
+                            <p class="questions__item__text">Работа заключается в привлечении внимания пользователей сайта эротическим контентом. Позировать, выполнять задания клиента или заставлять мембера выполнять квесты? Сценарий зависит от решимости модели и желания заработать. Даже раздеваться не обязательно. Порталы устанавливают ограничения, но все они призваны сохранить жизнь и здоровье пользователей.</p>
+                            <div class="questions__item__open"></div>
+                        </li>
+                        <li class="questions__item">
+                            <h2 class="questions__item__header">Почему лучше работать в студии?</h2>
+                            <p class="questions__item__text">Работа заключается в привлечении внимания пользователей сайта эротическим контентом. Позировать, выполнять задания клиента или заставлять мембера выполнять квесты? Сценарий зависит от решимости модели и желания заработать. Даже раздеваться не обязательно. Порталы устанавливают ограничения, но все они призваны сохранить жизнь и здоровье пользователей.</p>
+                            <div class="questions__item__open"></div>
+                        </li>
+                        <li class="questions__item">
+                            <h2 class="questions__item__header">Как защищаются персональные данные моделей?</h2>
+                            <p class="questions__item__text">Работа заключается в привлечении внимания пользователей сайта эротическим контентом. Позировать, выполнять задания клиента или заставлять мембера выполнять квесты? Сценарий зависит от решимости модели и желания заработать. Даже раздеваться не обязательно. Порталы устанавливают ограничения, но все они призваны сохранить жизнь и здоровье пользователей.</p>
+                            <div class="questions__item__open"></div>
+                        </li>
+                        <li class="questions__item">
+                            <h2 class="questions__item__header">Сколько зарабатывают веб-модели?</h2>
+                            <p class="questions__item__text">Работа заключается в привлечении внимания пользователей сайта эротическим контентом. Позировать, выполнять задания клиента или заставлять мембера выполнять квесты? Сценарий зависит от решимости модели и желания заработать. Даже раздеваться не обязательно. Порталы устанавливают ограничения, но все они призваны сохранить жизнь и здоровье пользователей.</p>
+                            <div class="questions__item__open"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="questionnaire" id="anketa">
+                <div class="wrap">
+                    <h2 class="questionnaire__header"> <span>Готова попробовать,</span>  <br> но боишься?</h2>
+                    <div class="questionnaire__wrap">
+                        <p class="questionnaire__text">Заполни анкету, мы свяжемся с тобой и ответим на все вопросы, а потом ты решишь сама</p>
+                        <span class="questionnaire__subtitle">p.s. Заполнение анкеты ни к чему тебя  не обязывает</span>
+                        <form class="questionnaire__form" method="POST">
+                            <input class="questionnaire__form__input questionnaire__form__name" type="text" name="name" placeholder="Как тебя зовут?" required>
+                            <input class="questionnaire__form__input questionnaire__form__tel" type="tel" name="tel" placeholder="+7 (999) 999-99-99" required>
+                            <input class="questionnaire__form__input questionnaire__form__number" type="number" name="number" placeholder="Возраст" required>
+                            <div class="questionnaire__form__file">
+                                <input hidden class="questionnaire__form__file" type="file" name="photo" id="photo">
+                                <label for="photo">Прикрепить фото</label>
+                            </div>
+                            <button class="questionnaire__form__submit button-active" type="submit">Отправить анкету</button>
+                            <div class="questionnaire__consultation-form">
+                                <input class="questionnaire__consultation-form__iput visually-hidden" id="checkbox" type="checkbox" name="approval" required checked>
+                                <label for="checkbox" class="questionnaire__consultation-label">Даю согласие на обработку <a href="#">персональных данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrap wrap">
+                <div class="footer__logo-box">
+                    <picture class="footer__logo">
+                        <source media="(min-width: 768px)" srcset="image/footer/logo-desctop.svg" width='163' height='70'>
+                        <img src="image/footer/logo-mobile.svg" width="113" height="44"> 
+                    </picture>
+                    <p class="footer__logo-text">©Infinity studio 2021</p>                    
+                </div>
+
+                <a class="footer__tel__mobile" href="tel:+7 (927) 018-26-56">+7 (927) 018-26-56</a>
+                <ul class="footer__list-mobile">
+                    <li class="footer__item-mobile footer__item-mobile-telegram"><a href="#"></a></li>
+                    <li class="footer__item-mobile footer__item-mobile-vk"><a href="#"></a></li>
+                    <li class="footer__item-mobile footer__item-mobile-wathap"><a href="#"></a></li>
+                    <li class="footer__item-mobile footer__item-mobile-viber"><a href="#"></a></li>
+                </ul>
+                <a class="footer__politicy-mibile" href="#">Политика конфиденциальности</a>
+                <a class="footer__dewoloper-mobile" href="#">Разработка сайта - <span>Вятка IT</span> </a>
+                
+                <a class="footer__politicy-desctop" href="#">Политика конфиденциальности</a>
+                <ul class="footer__list-desctop">
+                    <li class="footer__item-desctop footer__item-desctop-telegram"><a href="#"></a></li>
+                    <li class="footer__item-desctop footer__item-desctop-vk"><a href="#"></a></li>
+                    <li class="footer__item-desctop footer__item-desctop-wathap"><a href="#"></a></li>
+                    <li class="footer__item-desctop footer__item-desctop-viber"><a href="#"></a></li>
+                </ul>
+                <div class="footer__tel__desctop">
+                    <a class="footer__tel" href="#">+7 (927) 018-26-56</a>
+                    <a class="footer__dewoloper" href="#">Разработка сайта - <span>Вятка IT</span></a>
+                </div>
+            </div>
+        </footer> 
+        <div class="modal__show">
+
+        </div> 
+        <div class="modal-call">
+            <div class="modal-call__close">
+
+            </div>
+            <h2 class="modal-call__header">Заказать звонок</h2>
+            <form class="modal-call__form" method="POST">
+                <input class="modal-call__form__input modal-call__form__input-name" type="text" placeholder="Имя" name="name" required>
+                <input class="modal-call__form__input modal-call__form__input-tel" type="tel" placeholder="+7 (999) 999-99-99" name="tel" required>
+                <div class="modal-call__form__politicy">
+                    <input class="visually-hidden modal-call__form__politicy__input" type="checkbox" id="id-fomr" required checked>
+                    <label for="id-fomr">Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="modal-call__form__button" type="submit">Заказать звонок</button>
+            </form>
+        </div> 
+        <div class="successful-sending">
+            <div class="successful-sending__close">
+
+            </div>
+            <img class="successful-sending__image" src="image/modal/Check.png" width="114" height="114" alt="">
+            <h2 class="successful-sending__header">Мы уже получили заявку и скоро свяжемся с тобой</h2>
+            <button class="successful-sending__button" type="">Закрыть</button>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/mask.js"></script>
+        <script>
+            //ПЛАВНЫЙ ЯКОРЬ 
+            const anchors = document.querySelectorAll('a[href*="#"]')
+
+            for(let anchor of anchors) {
+                anchor.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const blockID = anchor.getAttribute('href')
+                    document.querySelector('' + blockID).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    })
+                })
+            }
+            $('[type=tel]').mask('+7 (999) 999-99-99')
+            let openQuestions = document.querySelectorAll('.questions__item');
+
+            for(let i = 0; i < openQuestions.length; i++) {
+                openQuestions[i].addEventListener('click', function() {
+                    openQuestions[i].classList.toggle('questions__item_open')
+                })
+            }
+
+            //Заказать звонок
+            let buttonOpenCall = document.querySelector('.header__contact__button');
+
+            buttonOpenCall.addEventListener('click', function() {
+                document.querySelector('.modal-call').classList.add('modal-call-active');
+                document.querySelector('.modal__show').classList.add('modal-call-active');
+            })
+
+            document.querySelector('.opportunities__button').addEventListener('click', function() {
+                document.querySelector('.modal-call').classList.add('modal-call-active');
+                document.querySelector('.modal__show').classList.add('modal-call-active');
+            })
+
+            document.querySelector('.modal-call__close').addEventListener('click', function() {
+                document.querySelector('.modal-call').classList.remove('modal-call-active');
+                document.querySelector('.modal__show').classList.remove('modal-call-active');
+                document.querySelector('.modal-call__form__input-name').value = ''
+                document.querySelector('.modal-call__form__input-tel').value = ''
+            })
+
+            document.querySelector('.modal__show').addEventListener('click', function() {
+                document.querySelector('.modal-call').classList.remove('modal-call-active');
+                document.querySelector('.modal__show').classList.remove('modal-call-active');
+                document.querySelector('.successful-sending').classList.remove('successful-sending-active');
+                document.querySelector('.questionnaire__form__name').value = ''
+                document.querySelector('.questionnaire__form__tel').value = ''
+                document.querySelector('.questionnaire__form__number').value = ''
+                document.querySelector('.questionnaire__form__file').value = ''
+            })
+
+
+        </script>
+    </body>
+</html>
+
