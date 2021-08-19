@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" /> 
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -454,19 +455,29 @@
                     <div class="reviews-slide-container swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper-slide--reviews-slide">
-                                <img class="swiper-slide__reviews" src="image/reviews/reviews-1.jpg" alt="отзыв" width="162" height="335">
+                                <a href="image/reviews/reviews-1.jpg">
+                                    <img class="swiper-slide__reviews" src="image/reviews/reviews-1.jpg" alt="отзыв" width="162" height="335">                                    
+                                </a>
                             </div>
                             <div class="swiper-slide swiper-slide--reviews-slide">
-                                <img class="swiper-slide__reviews" src="image/reviews/reviews-2.jpg" alt="отзыв" width="162" height="335">
+                                <a href="image/reviews/reviews-2.jpg">
+                                    <img class="swiper-slide__reviews" src="image/reviews/reviews-2.jpg" alt="отзыв" width="162" height="335">
+                                </a>
                             </div>
                             <div class="swiper-slide swiper-slide--reviews-slide">
-                                <img class="swiper-slide__reviews" src="image/reviews/reviews-3.jpg" alt="отзыв" width="162" height="335">
+                                <a href="image/reviews/reviews-3.jpg">
+                                    <img class="swiper-slide__reviews" src="image/reviews/reviews-3.jpg" alt="отзыв" width="162" height="335">
+                                </a>
                             </div>
                             <div class="swiper-slide swiper-slide--reviews-slide">
-                                <img class="swiper-slide__reviews" src="image/reviews/reviews-4.jpg" alt="отзыв" width="162" height="335">
+                                <a href="image/reviews/reviews-4.jpg">
+                                    <img class="swiper-slide__reviews" src="image/reviews/reviews-4.jpg" alt="отзыв" width="162" height="335">
+                                </a>
                             </div>
                             <div class="swiper-slide swiper-slide--reviews-slide">
-                                <img class="swiper-slide__reviews" src="image/reviews/reviews-5.jpg" alt="отзыв" width="162" height="335">
+                                <a href="image/reviews/reviews-5.jpg">
+                                    <img class="swiper-slide__reviews" src="image/reviews/reviews-5.jpg" alt="отзыв" width="162" height="335">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -594,11 +605,27 @@
             <h2 class="successful-sending__header">Мы уже получили заявку и скоро свяжемся с тобой</h2>
             <button class="successful-sending__button" type="">Закрыть</button>
         </div>
+        
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <script src="js/mask.js"></script>
         <script>
+            //Выводк картинок
+            $(document).ready(function() {
+                $('.reviews-slide-container').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    tLoading: 'Загрузка изображения image #%curr%...',
+                    mainClass: 'mfp-img-mobile',
+                    gallery: {
+                            enabled: true,
+                            navigateByImgClick: true,
+                            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                        },
+                });
+            });
             //ПЛАВНЫЙ ЯКОРЬ 
             $('[type=tel]').mask('+7 (999) 999-99-99')
             const anchors = document.querySelectorAll('a[href*="#"]')
