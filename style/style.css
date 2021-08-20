@@ -319,7 +319,7 @@ input[type="radio"].visually-hidden {
         height: 237px;
         background-repeat: no-repeat;
         background-position: center;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         background-image: url('../image/prewiy/button-decor-desctop.png');
     }
@@ -539,7 +539,7 @@ input[type="radio"].visually-hidden {
         background-repeat: no-repeat;
         background-position: center;
         background-image: url('../image/opportunities/opportunities-decor-desctop.png');
-        top: -1px;
+        top: -2px;
         left: 0;
         background-size: cover;
     }
@@ -1292,7 +1292,7 @@ input[type="radio"].visually-hidden {
     .requirements::after {
         height: 258px;
         background-image: url('../image/requirements/requirements-top-desctop.png');
-        top: -1px;
+        top: -2px;
     }
 
     .requirements::before {
